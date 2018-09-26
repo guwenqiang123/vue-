@@ -1,0 +1,18 @@
+/*笔记大标题*/
+.ui.header:first-child{
+    margin-top: 50px;
+}
+
+/*笔记列表*/
+.ui.card, .ui.cards>.card{
+    width: 100%;
+}
+
+.trash{
+    cursor: pointer;
+    float: right;
+}
+
+textarea{
+    width: 100%;
+}

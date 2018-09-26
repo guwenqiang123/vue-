@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>在线笔记</title>
+    <link href="https://cdn.bootcss.com/semantic-ui/2.3.1/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app" class="ui container">
+
+    <h4 class="ui horizontal divider header"><i class="leanpub icon"></i> Notes App_Vue.js </h4>
+
+    <button class="ui blue button" @click="add">添加笔记</button>
+
+    <note v-for="(note,index) in notes" :todo="note" :key="index"></note>
+
+    <div v-if="!notes.length" class="ui message">当前没有笔记，请点击添加笔记。</div>
+
+</div>
+
+
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.js"></script>
+<script src="https://cdn.bootcss.com/lodash.js/4.17.10/lodash.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.22.1/moment.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.22.1/locale/zh-cn.js"></script>
+<script src="https://cdn.bootcss.com/autosize.js/4.0.2/autosize.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
